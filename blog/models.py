@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 
 
 STATUS = ((0, "Draft"), (1, "Publish"))
+TYPE = ((0, "StandardPost"), (1, "BlankPage"))
+
 
 
 class Post(models.Model):
@@ -15,6 +17,9 @@ class Post(models.Model):
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    type = models.IntegerField(choices=TYPE, default=0)
+    comments_activated = models.BooleanField(default=True)
+
 
     class Meta:
         ordering = ["-created_on"]
