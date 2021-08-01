@@ -16,3 +16,4 @@ db.sqlite3
 .history
 
 venv
+media/
