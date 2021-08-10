@@ -1,8 +1,8 @@
-# Trifolium project blog
+# Trifólium project blog
 
 Forked from [TheAbhijeet/Django_blog](https://github.com/TheAbhijeet/Django_blog)
 
-Repository for storing website code of [Trifolium Project](https://trifolium-project.com/)
+Repository for storing website code of [Trifólium Project](https://trifolium-project.com/)
 
 ## Usage
 
