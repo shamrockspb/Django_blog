@@ -2,6 +2,8 @@
 
 Forked from [TheAbhijeet/Django_blog](https://github.com/TheAbhijeet/Django_blog)
 
+Repository for storing website code of [Trifolium Project](https://trifolium-project.com/)
+
 ## Usage
 
 **Under construction**
