@@ -17,3 +17,8 @@ db.sqlite3
 
 venv
 media/
+
+traefik-public-certificates/
+
+staticfiles/
+static

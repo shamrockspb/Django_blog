@@ -8,7 +8,7 @@
       <div class="card-body">
         {% if post.type != 1 %} 
         <h1>{% block title %} {{ post.title }} {% endblock title %}</h1>
-        <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+        <p class=" text-muted">{{ post.author.first_name }} {{ post.author.last_name }} | {{ post.created_on }}</p>
         {% endif %}
         <p class="card-text ">{{ post.content | safe }}</p>
       </div>

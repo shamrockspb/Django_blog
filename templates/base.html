@@ -7,7 +7,7 @@
 
 
 <head>
-  <title>Shamrock project</title>
+  <title>Trifólium</title>
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -24,7 +24,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
     <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'home' %}">Shamrock project</a>
+      <a class="navbar-brand" href="{% url 'home' %}">Trifólium</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -42,6 +42,9 @@
           </li>
           <li class="nav-item text-black">
             <a class="nav-link text-black font-weight-bold" href="{% url 'post_detail' 'contact'  %}">Contact</a>
+          </li>
+          <li class="nav-item text-black">
+            <a class="nav-link text-black font-weight-bold" href="{% url 'post_detail' 'services'  %}">Services</a>
           </li>
         </ul>
       </div>

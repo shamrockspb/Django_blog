@@ -1,22 +1,14 @@
 from .base import *
 
+import environ
+
+env = environ.Env()
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = env('DEBUG')
+
 DATABASES = {
-    
-    'default': {
-
-        'ENGINE': 'django.db.backends.postgresql',
-
-        'NAME': 'blog',
-
-        'USER': 'postgres',
-
-        'PASSWORD': 'example',
-
-        'HOST': 'postgres',
-
-        'PORT': '5432',
-
-    }
+    'default': env.db(),
 }
 
-ALLOWED_HOSTS = ['shamrock-project.com']
+ALLOWED_HOSTS = env('DJANGO_ALLOWED_HOSTS', default=[])
